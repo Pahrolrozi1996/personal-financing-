@@ -89,7 +89,7 @@ header{
 }
 
 .navbar{
-    height:72px;
+    height:95px;
 
     display:flex;
 
@@ -101,7 +101,7 @@ header{
 
 .logo img{
 
-    height:52px;
+    height:62px;
 
 }
 
@@ -167,7 +167,16 @@ nav a:hover{
 
     align-items:center;
 
-    padding:140px 0 80px;
+    padding:115px 0 80px;
+
+    background:
+    radial-gradient(circle at top right, rgba(122,0,25,.06), transparent 35%),
+    linear-gradient(
+        180deg,
+        #fff8fa 0%,
+        #ffffff 45%,
+        #f8fafc 100%
+    );
 
 }
 
