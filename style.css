@@ -538,7 +538,7 @@ linear-gradient(
 
 .section-heading h2{
 
-    font-size:46px;
+    font-size:50px;
 
     margin-bottom:20px;
 
@@ -633,20 +633,19 @@ linear-gradient(
 
 .eligibility-box{
 
-    max-width:700px;
+    max-width:900px;
 
-    margin:60px auto 0;
+    margin:80px auto 0;
 
     background:#fff;
 
-    padding:45px;
+    padding:55px;
 
-    border-radius:28px;
+    border-radius:30px;
 
     border:1px solid rgba(122,0,25,.08);
 
-    box-shadow:
-    0 25px 60px rgba(0,0,0,.08);
+    box-shadow:0 25px 60px rgba(0,0,0,.08);
 
 }
 
@@ -656,8 +655,7 @@ linear-gradient(
 
     transition:.35s;
 
-    box-shadow:
-    0 35px 70px rgba(0,0,0,.12);
+    box-shadow:0 35px 70px rgba(0,0,0,.12);
 
 }
 
