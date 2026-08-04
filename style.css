@@ -1796,7 +1796,7 @@ RULE MODAL
 
     /* Hero */
  .hero{
-    padding-top:110px;
+    padding-top:180px !important;
 }
 
     .hero-grid{
