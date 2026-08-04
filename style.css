@@ -162,20 +162,85 @@ nav a:hover{
 
 .hero{
 
-    display:flex;
+    position:relative;
+    overflow:hidden;
 
+    display:flex;
     align-items:center;
 
     padding:115px 0 80px;
 
     background:
-    radial-gradient(circle at top right, rgba(122,0,25,.06), transparent 35%),
+    radial-gradient(circle at top left, rgba(122,0,25,.08), transparent 25%),
+    radial-gradient(circle at bottom right, rgba(212,175,55,.10), transparent 30%),
     linear-gradient(
         180deg,
         #fff8fa 0%,
         #ffffff 45%,
         #f8fafc 100%
     );
+
+}
+
+.hero::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:700px;
+    height:700px;
+
+    top:-300px;
+    right:-250px;
+
+    background:rgba(122,0,25,.06);
+
+    border-radius:50%;
+
+    filter:blur(80px);
+
+}
+
+.hero::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:500px;
+    height:500px;
+
+    bottom:-220px;
+    left:-180px;
+
+    background:rgba(212,175,55,.08);
+
+    border-radius:50%;
+
+    filter:blur(70px);
+
+}
+
+.hero .container{
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+.hero-wave{
+
+    position:absolute;
+
+    bottom:-1px;
+
+    left:0;
+
+    width:100%;
+
+    line-height:0;
 
 }
 
