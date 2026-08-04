@@ -1775,12 +1775,13 @@ RULE MODAL
 @media (max-width:768px){
 
     /* Navbar */
-    .navbar{
-        height:auto;
-        padding:15px 0;
-        flex-direction:column;
-        gap:15px;
-    }
+   .navbar{
+    height:80px;
+    padding:0;
+    flex-direction:row;
+    justify-content:space-between;
+    align-items:center;
+}
 
     nav ul{
         flex-wrap:wrap;
@@ -1794,8 +1795,8 @@ RULE MODAL
     }
 
     /* Hero */
-  .hero{
-    padding:95px 0 70px;
+ .hero{
+    padding-top:110px;
 }
 
     .hero-grid{
