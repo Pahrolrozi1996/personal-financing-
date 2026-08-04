@@ -70,8 +70,7 @@ a{
 
 header{
 
-    position:fixed;
-
+    position:sticky;
     top:0;
 
     left:0;
@@ -1796,7 +1795,7 @@ RULE MODAL
 
     /* Hero */
  .hero{
-    padding-top:180px !important;
+    padding:140px 0 80px;
 }
 
     .hero-grid{
