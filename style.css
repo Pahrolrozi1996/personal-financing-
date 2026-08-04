@@ -620,14 +620,9 @@ linear-gradient(
 
     padding:100px 0;
 
-    background:
-    radial-gradient(circle at top left, rgba(122,0,25,.05), transparent 30%),
-    radial-gradient(circle at bottom right, rgba(212,175,55,.08), transparent 35%),
-    linear-gradient(
-        180deg,
-        #ffffff 0%,
-        #faf7f8 100%
-    );
+    background:#F8FAFC;
+
+}
 
 }
 
@@ -635,27 +630,17 @@ linear-gradient(
 
     max-width:900px;
 
-    margin:80px auto 0;
+    margin:60px auto 0;
 
-    background:#fff;
+    padding:50px;
 
-    padding:55px;
+    background:#ffffff;
 
-    border-radius:30px;
+    border-radius:24px;
 
-    border:1px solid rgba(122,0,25,.08);
+    border:1px solid #E5E7EB;
 
-    box-shadow:0 25px 60px rgba(0,0,0,.08);
-
-}
-
-.eligibility-box:hover{
-
-    transform:translateY(-5px);
-
-    transition:.35s;
-
-    box-shadow:0 35px 70px rgba(0,0,0,.12);
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
 
 }
 
@@ -681,17 +666,9 @@ linear-gradient(
 .form-group input,
 .form-group select{
 
-    width:100%;
+    background:#FCFCFD;
 
-    padding:18px;
-
-    border:1px solid var(--border);
-
-    border-radius:16px;
-
-    font-size:16px;
-
-    font-family:'Poppins',sans-serif;
+    border:2px solid #ECECEC;
 
     transition:.3s;
 
@@ -700,11 +677,11 @@ linear-gradient(
 .form-group input:focus,
 .form-group select:focus{
 
-    outline:none;
+    border-color:#7A0019;
 
-    border-color:var(--primary);
+    background:#ffffff;
 
-    box-shadow:0 0 0 4px rgba(122,0,25,.08);
+    box-shadow:0 0 0 5px rgba(122,0,25,.08);
 
 }
 
