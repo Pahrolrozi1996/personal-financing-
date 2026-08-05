@@ -644,6 +644,11 @@ linear-gradient(
 
 }
 
+.eligibility-wrapper{
+    max-width:900px;
+    margin:0 auto;
+}
+
 .form-group{
 
     display:flex;
