@@ -620,7 +620,7 @@ linear-gradient(
 
     background:#F3F6FB;
 
-    padding:110px 0;
+    padding:120px 0;
 
 }
 
@@ -628,19 +628,21 @@ linear-gradient(
 
 .eligibility-box{
 
-    max-width:900px;
+    width:100%;
+    max-width:1000px;
 
-    margin:60px auto 0;
+    margin:0 auto;
 
-    padding:55px;
+    padding:60px;
 
     background:#ffffff;
 
-    border:1px solid #E8E8E8;
-
     border-radius:28px;
 
-    box-shadow:0 20px 60px rgba(0,0,0,.08);
+    border:1px solid rgba(0,0,0,.06);
+
+    box-shadow:
+        0 25px 70px rgba(0,0,0,.10);
 
 }
 
@@ -657,6 +659,13 @@ linear-gradient(
 
     margin-bottom:25px;
 
+      background:#FAFBFC;
+
+    padding:18px;
+
+    border-radius:18px;
+
+    border:1px solid #ECECEC;
 }
 
 
@@ -671,21 +680,15 @@ linear-gradient(
 .form-group input,
 .form-group select{
 
-    width:100%;
+    background:#fff;
 
-    height:62px;
+    border:2px solid #E6E8EC;
 
-    padding:0 20px;
+    height:64px;
 
-    background:#F8FAFC;
-
-    border:2px solid #E5E7EB;
-
-    border-radius:16px;
+    border-radius:14px;
 
     font-size:16px;
-
-    transition:.3s;
 
 }
 
