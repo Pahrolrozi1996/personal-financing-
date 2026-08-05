@@ -1271,3 +1271,35 @@ menuToggle.classList.remove("active");
 });
 
 });
+
+/* ==========================================
+   FLOATING WHATSAPP
+========================================== */
+
+const floatingWA = document.querySelector(".floating-wa");
+
+if(floatingWA){
+
+floatingWA.style.opacity="0";
+
+floatingWA.style.transform="translateY(30px)";
+
+window.addEventListener("scroll",()=>{
+
+if(window.scrollY>350){
+
+floatingWA.style.opacity="1";
+
+floatingWA.style.transform="translateY(0)";
+
+}else{
+
+floatingWA.style.opacity="0";
+
+floatingWA.style.transform="translateY(30px)";
+
+}
+
+});
+
+}
