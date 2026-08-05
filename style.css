@@ -1966,3 +1966,149 @@ RULE MODAL
 }
 
 }
+
+/* =====================================================
+   MOBILE RESPONSIVE
+===================================================== */
+
+@media (max-width:991px){
+
+    .navbar{
+        height:80px;
+    }
+
+    nav ul{
+        gap:18px;
+        font-size:14px;
+    }
+
+    .hero-grid{
+        grid-template-columns:1fr;
+        gap:45px;
+    }
+
+    .hero-left{
+        order:2;
+        text-align:center;
+    }
+
+    .hero-right{
+        order:1;
+    }
+
+    .hero-description{
+        max-width:100%;
+    }
+
+    .hero-highlight{
+        grid-template-columns:1fr;
+    }
+
+    .hero-buttons{
+        justify-content:center;
+        flex-wrap:wrap;
+    }
+
+    .benefit-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .consultant-card{
+        grid-template-columns:1fr;
+    }
+
+    .section-heading h2{
+        font-size:38px;
+    }
+
+}
+
+@media (max-width:768px){
+
+    .container{
+        width:92%;
+    }
+
+    .hero{
+        padding-top:120px;
+    }
+
+    .hero h1{
+        font-size:40px;
+    }
+
+    .hero-buttons{
+        flex-direction:column;
+    }
+
+    .btn-primary,
+    .btn-outline{
+        width:100%;
+    }
+
+    .benefit-grid{
+        grid-template-columns:1fr;
+    }
+
+    #pricingContent{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .pricing-card{
+        width:100%;
+        flex:none;
+    }
+
+    .consultant-image img{
+        width:220px;
+        margin:auto;
+    }
+
+    .modal-content{
+        width:95%;
+        padding:25px;
+    }
+
+}
+
+@media (max-width:480px){
+
+    .navbar{
+        height:70px;
+    }
+
+    .logo img{
+        height:46px;
+    }
+
+    .hero{
+        padding-top:100px;
+    }
+
+    .hero h1{
+        font-size:32px;
+    }
+
+    .section-heading h2{
+        font-size:28px;
+    }
+
+    .hero-card{
+        padding:25px;
+    }
+
+    .pricing-card{
+        padding:25px;
+    }
+
+    .benefit-card{
+        padding:25px;
+    }
+
+    .submit-btn{
+        height:55px;
+        font-size:16px;
+    }
+
+}
