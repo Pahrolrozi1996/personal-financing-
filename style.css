@@ -618,9 +618,9 @@ linear-gradient(
 
 .eligibility{
 
-    padding:100px 0;
+    background:#F3F6FB;
 
-    background:#F8FAFC;
+    padding:110px 0;
 
 }
 
@@ -632,15 +632,15 @@ linear-gradient(
 
     margin:60px auto 0;
 
-    padding:50px;
+    padding:55px;
 
     background:#ffffff;
 
-    border-radius:24px;
+    border:1px solid #E8E8E8;
 
-    border:1px solid #E5E7EB;
+    border-radius:28px;
 
-    box-shadow:0 15px 40px rgba(0,0,0,.08);
+    box-shadow:0 20px 60px rgba(0,0,0,.08);
 
 }
 
@@ -666,9 +666,19 @@ linear-gradient(
 .form-group input,
 .form-group select{
 
-    background:#FCFCFD;
+    width:100%;
 
-    border:2px solid #ECECEC;
+    height:62px;
+
+    padding:0 20px;
+
+    background:#F8FAFC;
+
+    border:2px solid #E5E7EB;
+
+    border-radius:16px;
+
+    font-size:16px;
 
     transition:.3s;
 
@@ -677,11 +687,11 @@ linear-gradient(
 .form-group input:focus,
 .form-group select:focus{
 
+    background:#fff;
+
     border-color:#7A0019;
 
-    background:#ffffff;
-
-    box-shadow:0 0 0 5px rgba(122,0,25,.08);
+    box-shadow:0 0 0 6px rgba(122,0,25,.08);
 
 }
 
@@ -798,10 +808,21 @@ margin-bottom:20px;
 }
 
 .form-title{
-    margin-top:35px;
-    margin-bottom:20px;
-    padding-bottom:12px;
-    border-bottom:2px solid #f2f2f2;
+
+    font-size:22px;
+
+    font-weight:700;
+
+    color:#111827;
+
+    margin-top:45px;
+
+    margin-bottom:25px;
+
+    padding-bottom:14px;
+
+    border-bottom:2px solid #F1F5F9;
+
 }
 
 /* ==========================================
