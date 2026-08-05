@@ -2223,6 +2223,7 @@ border-bottom:1px solid #eee;
 
 .floating-wa{
 
+ overflow: visible;  
 position:fixed;
 
 right:25px;
