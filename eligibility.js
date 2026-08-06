@@ -479,7 +479,7 @@ function sendToWhatsApp() {
 
     const nama = document.getElementById("nama")?.value || "";
 
-    const umur = document.getElementById("umur")?.value || "";
+    const tarikhLahir = document.getElementById("tarikhLahir")?.value || "";
 
     const sektor = document.getElementById("sektor")?.value || "";
 
@@ -509,43 +509,43 @@ Saya ingin membuat semakan lanjut Pembiayaan Peribadi-i.
 
 ━━━━━━━━━━━━━━━━━━
 
-Nama :
+*Nama* :
 ${nama}
 
-Umur :
-${umur}
+*Tarikh Lahir*
+${tarikhLahir}
 
-Sektor :
+*Sektor* :
 ${sektor}
 
-Profesion :
+*Profesion* :
 ${profession}
 
-Kategori Majikan :
+*Kategori Majikan* :
 ${category}
 
-Bidang Syarikat :
+*Bidang Syarikat* :
 ${industry}
 
-Majikan :
+*Majikan* :
 ${company}
 
-Jawatan :
+*Jawatan* :
 ${position}
 
-Status Jawatan :
+*Status Jawatan* :
 ${status}
 
-Tempoh Perkhidmatan :
+*Tempoh Perkhidmatan* :
 ${service}
 
-Tempoh Operasi :
+*Tempoh Operasi* :
 ${operation}
 
-Gaji Pokok :
+*Gaji Pokok* :
 RM ${basic}
 
-Elaun Tetap :
+*Elaun Tetap* :
 RM ${allowance}
 
 ━━━━━━━━━━━━━━━━━━
