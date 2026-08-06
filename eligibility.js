@@ -480,6 +480,22 @@ function sendToWhatsApp() {
     const nama = document.getElementById("nama")?.value || "";
 
     const tarikhLahir = document.getElementById("tarikhLahir")?.value || "";
+    let umur = "";
+
+if (tarikhLahir) {
+
+    const today = new Date();
+    const birth = new Date(tarikhLahir);
+
+    umur = today.getFullYear() - birth.getFullYear();
+
+    const m = today.getMonth() - birth.getMonth();
+
+    if (m < 0 || (m === 0 && today.getDate() < birth.getDate())) {
+        umur--;
+    }
+
+}
 
     const sektor = document.getElementById("sektor")?.value || "";
 
@@ -514,6 +530,9 @@ ${nama}
 
 *Tarikh Lahir*
 ${tarikhLahir}
+
+*Umur*
+${umur} Tahun
 
 *Sektor* :
 ${sektor}
