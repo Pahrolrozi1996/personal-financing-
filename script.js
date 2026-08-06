@@ -11,7 +11,7 @@ if(form){
 
         const nama = document.getElementById("nama").value;
 
-        const umur = document.getElementById("umur").value;
+        const tarikhLahir = document.getElementById("tarikhLahir").value;
 
         const sektor = document.getElementById("sektor").value;
 
