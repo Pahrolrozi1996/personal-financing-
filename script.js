@@ -96,7 +96,7 @@ dynamicFields.innerHTML = `
 
 <label>Jawatan *</label>
 
-<input type="text" id="position">
+<input type="text" id="position" required>
 
 </div>
 
@@ -104,7 +104,7 @@ dynamicFields.innerHTML = `
 
 <label>Status Jawatan *</label>
 
-<select id="status">
+<select id="status" required>
 
 <option value="">Sila Pilih</option>
 
@@ -122,7 +122,7 @@ dynamicFields.innerHTML = `
 
 <label>Tempoh Perkhidmatan *</label>
 
-<select id="service">
+<select id="service" required>
 
 <option value="">Sila Pilih</option>
 
@@ -144,7 +144,7 @@ dynamicFields.innerHTML = `
 
 <label>Gaji Pokok (RM)</label>
 
-<input type="number" id="basic">
+<input type="number" id="basic" required>
 
 </div>
 
@@ -460,7 +460,7 @@ function renderSwastaFields() {
 
         <label>Jawatan *</label>
 
-        <input type="text" id="position">
+        <input type="text" id="position" required>
 
     </div>
 
@@ -468,7 +468,7 @@ function renderSwastaFields() {
 
         <label>Status Jawatan *</label>
 
-        <select id="status">
+        <select id="status" required>
 
             <option value="">Sila Pilih</option>
 
@@ -486,7 +486,7 @@ function renderSwastaFields() {
 
         <label>Tempoh Perkhidmatan *</label>
 
-        <select id="service">
+        <select id="service" required>
 
             <option value="">Sila Pilih</option>
 
@@ -506,7 +506,7 @@ function renderSwastaFields() {
 
         <label>Gaji Pokok (RM) *</label>
 
-        <input type="number" id="basic">
+        <input type="number" id="basic" required>
 
     </div>
 
