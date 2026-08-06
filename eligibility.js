@@ -480,18 +480,25 @@ function sendToWhatsApp() {
     const nama = document.getElementById("nama")?.value || "";
 
     const tarikhLahir = document.getElementById("tarikhLahir")?.value || "";
-    let umur = "";
+    
+   let umur = "";
 
 if (tarikhLahir) {
 
+    const parts = tarikhLahir.split("-");
+
+    const tahun = parseInt(parts[0]);
+    const bulan = parseInt(parts[1]);
+    const hari = parseInt(parts[2]);
+
     const today = new Date();
-    const birth = new Date(tarikhLahir);
 
-    umur = today.getFullYear() - birth.getFullYear();
+    umur = today.getFullYear() - tahun;
 
-    const m = today.getMonth() - birth.getMonth();
-
-    if (m < 0 || (m === 0 && today.getDate() < birth.getDate())) {
+    if (
+        (today.getMonth() + 1 < bulan) ||
+        ((today.getMonth() + 1 === bulan) && (today.getDate() < hari))
+    ) {
         umur--;
     }
 
