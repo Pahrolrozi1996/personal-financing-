@@ -258,6 +258,12 @@ linear-gradient(
 
 .hero-badge{
 
+   .hero-badge-top{
+    display:flex;
+    justify-content:center;
+    margin-bottom:40px;
+}
+
     display:inline-flex;
     align-items:center;
     gap:10px;
