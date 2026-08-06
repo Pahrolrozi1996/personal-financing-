@@ -1303,3 +1303,10 @@ floatingWA.style.transform="translateY(30px)";
 });
 
 }
+
+flatpickr("#tarikhLahir", {
+    dateFormat: "d/m/Y",
+    maxDate: "today",
+    disableMobile: true,
+    allowInput: false
+});
