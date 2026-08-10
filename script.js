@@ -1328,7 +1328,6 @@ flatpickr("#tarikhLahir", {
     clickOpens: true,
     maxDate: "today",
     disableMobile: false,
-   altInput: false
 
     onChange: function(selectedDates) {
 
@@ -1349,8 +1348,9 @@ flatpickr("#tarikhLahir", {
         }
 
         document.getElementById("umur").value = age + " Tahun";
+    }
+});
 
-},
 
 onClose: function(selectedDates, dateStr) {
 
