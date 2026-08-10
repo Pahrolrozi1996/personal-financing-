@@ -33,40 +33,37 @@ const RULES = {
     },
 
     glc: {
+    income: 2000,
+    service: "6plus",
+    status: "tetap"
+},
+
+professional: {
+    income: 2000,
+    service: "6plus",
+    status: "tetap"
+},
+
+swasta: {
+
+    plc_mnc: {
         income: 2000,
-        service: "6plus",
-        service: "2plus"
-        status: "tetap"
+        service: "6plus"
     },
 
-    professional: {
+    prominent: {
         income: 2000,
-        service: "6plus",
-            service: "2plus"
-        status: "tetap"
+        service: "2plus",
+        operation: "over5"
     },
 
-    swasta: {
-
-        plc_mnc: {
-            income: 2000,
-            service: "6plus"
-            service: "2plus"
-        },
-
-        prominent: {
-            income: 2000,
-            service: "2plus",
-            operation: "over5"
-        },
-
-        private: {
-            income: 2000,
-            service: "2plus",
-            operation: "over5"
-        }
-
+    private: {
+        income: 2000,
+        service: "2plus",
+        operation: "over5"
     }
+
+}
 
 };
 
