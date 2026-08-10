@@ -868,6 +868,10 @@ Lihat Syarat
 <a href="asset/pdf/gov-2.88.pdf"
 target="_blank"
 class="download-rate">
+onclick="gtag('event','download_rate',{
+    event_category:'PDF',
+    event_label:'Government 2.88'
+});">
 
     <i class="fa-solid fa-file-pdf"></i>
     Jadual Kadar Pembiayaan
@@ -901,9 +905,15 @@ Lihat Syarat
 
 </a>
 
-<a href="asset/pdf/professional-3.62.pdf"
+<a href="asset/pdf/package-2.93.pdf"
 target="_blank"
 class="download-rate">
+onclick="gtag('event','download_rate',{
+    event_category:'PDF',
+    event_label:'Government 2.88'
+});">
+
+
 
     <i class="fa-solid fa-file-pdf"></i>
 
