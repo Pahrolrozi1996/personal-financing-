@@ -707,7 +707,8 @@ linear-gradient(
 =========================== */
 
 .input-icon{
-    position: relative;
+    position:relative;
+    width:100%;
 }
 
 .input-icon input{
@@ -718,11 +719,10 @@ linear-gradient(
 
 .input-icon i{
     position:absolute;
-    top:50%;
     right:18px;
+    top:50%;
     transform:translateY(-50%);
     color:#7A0019;
-    cursor:pointer;
 }
 
 .form-group input:focus,
