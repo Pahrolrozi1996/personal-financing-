@@ -35,12 +35,14 @@ const RULES = {
     glc: {
         income: 2000,
         service: "6plus",
+        service: "2plus"
         status: "tetap"
     },
 
     professional: {
         income: 2000,
         service: "6plus",
+            service: "2plus"
         status: "tetap"
     },
 
@@ -49,6 +51,7 @@ const RULES = {
         plc_mnc: {
             income: 2000,
             service: "6plus"
+            service: "2plus"
         },
 
         prominent: {
