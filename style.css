@@ -99,12 +99,8 @@ header{
 }
 
 .logo img{
-    width:auto;
-    height:62px;
-    display:block;
-}.logo img{
-    width:auto;
-    height:62px;
+    width:125px;
+    height:auto;
     display:block;
 }
 
@@ -2144,10 +2140,10 @@ RULE MODAL
         height:70px;
     }
 
-    .logo img{
-    width:auto;
-    height:62px;
-    display:block;
+     .logo img{
+        width:115px;
+        height:auto;
+        display:block;
 }
 
     .hero{
