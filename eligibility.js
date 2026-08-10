@@ -483,7 +483,11 @@ function sendToWhatsApp() {
     
   const umur = document.getElementById("umur")?.value || "";
 
-    const sektor = document.getElementById("sektor")?.value || "";
+   const sektor = document.getElementById("sektor")
+    ? document.getElementById("sektor").options[
+        document.getElementById("sektor").selectedIndex
+      ].text
+    : "";
 
    const profession = document.getElementById("profession")?.value || "";
 
