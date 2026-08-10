@@ -1317,6 +1317,8 @@ floatingWA.style.transform="translateY(30px)";
 
 flatpickr("#tarikhLahir", {
     dateFormat: "d/m/Y",
+    altInput: true,
+    altFormat: "d/m/Y",
     maxDate: "today",
     disableMobile: true,
     allowInput: false,
@@ -1330,12 +1332,11 @@ flatpickr("#tarikhLahir", {
 
         let age = today.getFullYear() - birth.getFullYear();
 
+        const monthDiff = today.getMonth() - birth.getMonth();
+
         if (
-            today.getMonth() < birth.getMonth() ||
-            (
-                today.getMonth() === birth.getMonth() &&
-                today.getDate() < birth.getDate()
-            )
+            monthDiff < 0 ||
+            (monthDiff === 0 && today.getDate() < birth.getDate())
         ) {
             age--;
         }
@@ -1343,6 +1344,5 @@ flatpickr("#tarikhLahir", {
         document.getElementById("umur").value = age + " Tahun";
 
     }
-
 });
 
