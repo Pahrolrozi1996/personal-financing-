@@ -133,13 +133,9 @@ function validateGLC() {
 
     }
 
-    if (service !== "6plus") {
-
-        reasons.push(
-            "Tempoh Perkhidmatan minimum 6 bulan."
-        );
-
-    }
+    if (service !== "6plus" && service !== "2plus") {
+    reasons.push("Tempoh Perkhidmatan minimum 6 bulan.");
+}
 
     if (basic < 2000) {
 
@@ -196,13 +192,9 @@ function validateProfessional() {
     }
 
     // Minimum 6 bulan
-    if (service !== "6plus") {
-
-        reasons.push(
-            "Tempoh Perkhidmatan minimum 6 bulan."
-        );
-
-    }
+    if (service !== "6plus" && service !== "2plus") {
+    reasons.push("Tempoh Perkhidmatan minimum 6 bulan.");
+}
 
     // Gaji minimum
     if (basic < 2000) {
@@ -259,13 +251,9 @@ function validateSwasta() {
     // PLC / MNC
     if (category === "plc_mnc") {
 
-        if (service !== "6plus") {
-
-            reasons.push(
-                "Tempoh Perkhidmatan minimum 6 bulan."
-            );
-
-        }
+        if (service !== "6plus" && service !== "2plus") {
+    reasons.push("Tempoh Perkhidmatan minimum 6 bulan.");
+}
 
         if (basic < 2000) {
 
