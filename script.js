@@ -1427,34 +1427,3 @@ onClose: function(selectedDates, dateStr) {
 });
 
 
-onClose: function(selectedDates, dateStr) {
-
-    if (!dateStr) {
-        document.getElementById("umur").value = "";
-        return;
-    }
-
-    // Jika pengguna taip sendiri, kira umur semula
-    const parts = dateStr.split("/");
-
-    if (parts.length !== 3) return;
-
-    const birth = new Date(parts[2], parts[1] - 1, parts[0]);
-    const today = new Date();
-
-    let age = today.getFullYear() - birth.getFullYear();
-
-    const monthDiff = today.getMonth() - birth.getMonth();
-
-    if (
-        monthDiff < 0 ||
-        (monthDiff === 0 && today.getDate() < birth.getDate())
-    ) {
-        age--;
-    }
-
-    document.getElementById("umur").value = age + " Tahun";
-
-}
-});
-
