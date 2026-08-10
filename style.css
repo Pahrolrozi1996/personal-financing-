@@ -1786,13 +1786,10 @@ RULE MODAL
 }
 
 .footer-logo{
-
     width:220px;
-
+    height:auto;
     display:block;
-
     margin:0 auto 30px;
-
 }
 .footer h3{
 
@@ -2144,8 +2141,10 @@ RULE MODAL
     }
 
     .logo img{
-        height:46px;
-    }
+    width:auto;
+    height:62px;
+    display:block;
+}
 
     .hero{
         padding-top:100px;
