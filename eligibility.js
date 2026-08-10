@@ -489,7 +489,11 @@ function sendToWhatsApp() {
       ].text
     : "";
 
-   const profession = document.getElementById("profession")?.value || "";
+   const profession = document.getElementById("professionconst profession = document.getElementById("profession")
+    ? document.getElementById("profession").options[
+        document.getElementById("profession").selectedIndex
+      ].text
+    : "";")?.value || "";
 
 const category = document.getElementById("category")?.value || "";
 
