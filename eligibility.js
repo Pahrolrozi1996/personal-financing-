@@ -544,11 +544,13 @@ if (position) {
     text += `*Jawatan:* ${position}\n`;
 }
 
-text += `*Status Jawatan:* ${
-    document.getElementById("status").options[
-        document.getElementById("status").selectedIndex
-    ].text
-}\n`;
+if (status) {
+    text += `*Status Jawatan:* ${
+        document.getElementById("status").options[
+            document.getElementById("status").selectedIndex
+        ].text
+    }\n`;
+}
 
 if (service) {
     text += `*Tempoh Perkhidmatan:* ${
@@ -558,11 +560,13 @@ if (service) {
     }\n`;
 }
 
-text += `*Tempoh Operasi:* ${
-    document.getElementById("operation").options[
-        document.getElementById("operation").selectedIndex
-    ].text
-}\n`;
+if (operation) {
+    text += `*Tempoh Operasi:* ${
+        document.getElementById("operation").options[
+            document.getElementById("operation").selectedIndex
+        ].text
+    }\n`;
+}
    
 text += `*Gaji Pokok:* RM ${Number(basic).toLocaleString("en-MY")}\n`;
 
