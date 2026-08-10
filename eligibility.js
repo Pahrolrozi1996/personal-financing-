@@ -505,32 +505,59 @@ function sendToWhatsApp() {
 
     const allowance = document.getElementById("allowance")?.value || "0";
 
-    const text = `Assalamualaikum.
+    let text = `Assalamualaikum.
 
 Saya ingin membuat semakan lanjut Pembiayaan Peribadi-i.
 
 ━━━━━━━━━━━━━━━━━━
 
-*Nama* : ${nama}
-*Tarikh Lahir* ${tarikhLahir}
-*Umur* ${umur}
-*Sektor* : ${sektor}
-*Profesion* : ${profession}
-*Kategori Majikan* : ${category}
-*Bidang Syarikat* : ${industry}
-*Majikan* : ${company}
-*Jawatan* : ${position}
-*Status Jawatan* : ${status}
-*Tempoh Perkhidmatan* : ${service}
-*Tempoh Operasi* : ${operation}
-*Gaji Pokok* : RM ${basic}
-*Elaun Tetap* : RM ${allowance}
+*Nama:* ${nama}
+*Tarikh Lahir:* ${tarikhLahir}
+*Umur:* ${umur}
+*Sektor:* ${sektor}
+`;
 
+if (profession) {
+    text += `*Profesion:* ${profession}\n`;
+}
+
+if (category) {
+    text += `*Kategori Majikan:* ${category}\n`;
+}
+
+if (industry) {
+    text += `*Bidang Syarikat:* ${industry}\n`;
+}
+
+text += `*Majikan:* ${company}
+*Jawatan:* ${position}
+`;
+
+if (status && status !== "-") {
+    text += `*Status Jawatan:* ${status}\n`;
+}
+
+if (service && service !== "-") {
+    text += `*Tempoh Perkhidmatan:* ${document.getElementById("service").options[document.getElementById("service").selectedIndex].text}\n`;
+}
+
+if (operation && operation !== "-") {
+    text += `*Tempoh Operasi:* ${operation}\n`;
+}
+
+text += `*Gaji Pokok:* RM ${Number(basic).toLocaleString("en-MY")}\n`;
+
+if (allowance && Number(allowance) > 0) {
+    text += `*Elaun Tetap:* RM ${Number(allowance).toLocaleString("en-MY")}\n`;
+}
+
+text += `
 ━━━━━━━━━━━━━━━━━━
 
 Saya telah membuat semakan awal melalui laman web dan ingin mendapatkan semakan lanjut.
 
-Terima kasih.`;
+Terima kasih.
+`;
 
     window.open(
 
