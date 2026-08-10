@@ -1328,6 +1328,7 @@ flatpickr("#tarikhLahir", {
     clickOpens: true,
     maxDate: "today",
     disableMobile: false,
+   altInput: false
 
     onChange: function(selectedDates) {
 
