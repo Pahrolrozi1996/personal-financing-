@@ -532,47 +532,20 @@ Saya ingin membuat semakan lanjut Pembiayaan Peribadi-i.
 
 ━━━━━━━━━━━━━━━━━━
 
-*Nama* :
-${nama}
-
-*Tarikh Lahir*
-${tarikhLahir}
-
-*Umur*
-${umur} Tahun
-
-*Sektor* :
-${sektor}
-
-*Profesion* :
-${profession}
-
-*Kategori Majikan* :
-${category}
-
-*Bidang Syarikat* :
-${industry}
-
-*Majikan* :
-${company}
-
-*Jawatan* :
-${position}
-
-*Status Jawatan* :
-${status}
-
-*Tempoh Perkhidmatan* :
-${service}
-
-*Tempoh Operasi* :
-${operation}
-
-*Gaji Pokok* :
-RM ${basic}
-
-*Elaun Tetap* :
-RM ${allowance}
+*Nama* : ${nama}
+*Tarikh Lahir* ${tarikhLahir}
+*Umur* ${umur} Tahun
+*Sektor* : ${sektor}
+*Profesion* : ${profession}
+*Kategori Majikan* : ${category}
+*Bidang Syarikat* : ${industry}
+*Majikan* : ${company}
+*Jawatan* : ${position}
+*Status Jawatan* : ${status}
+*Tempoh Perkhidmatan* : ${service}
+*Tempoh Operasi* : ${operation}
+*Gaji Pokok* : RM ${basic}
+*Elaun Tetap* : RM ${allowance}
 
 ━━━━━━━━━━━━━━━━━━
 
