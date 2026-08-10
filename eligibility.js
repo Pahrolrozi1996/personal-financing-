@@ -481,28 +481,7 @@ function sendToWhatsApp() {
 
     const tarikhLahir = document.getElementById("tarikhLahir")?.value || "";
     
-   let umur = "";
-
-if (tarikhLahir) {
-
-    const parts = tarikhLahir.split("-");
-
-    const tahun = parseInt(parts[0]);
-    const bulan = parseInt(parts[1]);
-    const hari = parseInt(parts[2]);
-
-    const today = new Date();
-
-    umur = today.getFullYear() - tahun;
-
-    if (
-        (today.getMonth() + 1 < bulan) ||
-        ((today.getMonth() + 1 === bulan) && (today.getDate() < hari))
-    ) {
-        umur--;
-    }
-
-}
+  const umur = document.getElementById("umur")?.value || "";
 
     const sektor = document.getElementById("sektor")?.value || "";
 
