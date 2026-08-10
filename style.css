@@ -99,9 +99,13 @@ header{
 }
 
 .logo img{
-
+    width:auto;
     height:62px;
-
+    display:block;
+}.logo img{
+    width:auto;
+    height:62px;
+    display:block;
 }
 
 nav ul{
