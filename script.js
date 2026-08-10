@@ -1324,11 +1324,10 @@ floatingWA.style.transform="translateY(30px)";
 
 flatpickr("#tarikhLahir", {
     dateFormat: "d/m/Y",
-    altInput: true,
-    altFormat: "d/m/Y",
+    allowInput: true,
+    clickOpens: true,
     maxDate: "today",
-    disableMobile: true,
-    allowInput: false,
+    disableMobile: false,
 
     onChange: function(selectedDates) {
 
@@ -1349,7 +1348,6 @@ flatpickr("#tarikhLahir", {
         }
 
         document.getElementById("umur").value = age + " Tahun";
-
     }
 });
 
