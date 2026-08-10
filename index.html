@@ -201,13 +201,23 @@ content="website">
 
             <div class="hero-buttons">
 
-                <a href="#semakan" class="btn-primary">
+                <a href="#semakan" class="btn-primary<a href="#semakan"
+class="btn-primary"
+onclick="gtag('event','start_check',{
+    event_category:'Button',
+    event_label:'Hero Button'
+});">
 
                     Mulakan Semakan
 
                 </a>
 
-                <a href="#pricing" class="btn-outline">
+                <a href="#pricing"
+class="btn-outline"
+onclick="gtag('event','view_pricing',{
+    event_category:'Button',
+    event_label:'Pricing'
+});">
     Lihat Kadar Pembiayaan
 </a>
 
@@ -959,7 +969,11 @@ Mulakan Semakan
 <a
 href="https://wa.me/60134300057?text=Assalamualaikum.%20Saya%20ingin%20membuat%20semakan%20awal%20kelayakan%20Pembiayaan%20Peribadi-i."
 target="_blank"
-class="floating-wa">
+class="floating-wa"
+onclick="gtag('event','whatsapp_click',{
+    event_category:'Engagement',
+    event_label:'Floating WhatsApp'
+});">
 
     <div class="wa-tooltip">
 
