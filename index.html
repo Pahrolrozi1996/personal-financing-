@@ -116,8 +116,15 @@ content="website">
 
     <link rel="stylesheet" href="style.css?v=2">
 
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+  <link rel="preload"
+      href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'">
 
+<noscript>
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+</noscript>
 </head>
     
   
