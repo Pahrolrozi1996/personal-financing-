@@ -187,14 +187,14 @@ function loadProfessional() {
             <option value="">Sila Pilih</option>
 
             <option value="accountant">Accountant</option>
-            <option value="engineer">Engineer</option>
-            <option value="lecturer">Lecturer</option>
-            <option value="vet">Veterinary Doctor</option>
-            <option value="optometrist">Optometrist</option>
-            <option value="qs">Quantity Surveyor</option>
-            <option value="actuary">Actuary</option>
-            <option value="doctor">Medical Doctor</option>
-            <option value="dentist">Dentist</option>
+<option value="engineer">Engineer</option>
+<option value="lecturer">Lecturer</option>
+<option value="veterinary_doctor">Veterinary Doctor</option>
+<option value="optometrist">Optometrist</option>
+<option value="quantity_surveyor">Quantity Surveyor</option>
+<option value="actuary">Actuary</option>
+<option value="medical_doctor">Medical Doctor</option>
+<option value="dentist">Dentist</option>
 
         </select>
 
