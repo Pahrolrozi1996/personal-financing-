@@ -1324,17 +1324,24 @@ floatingWA.style.transform="translateY(30px)";
 
 const tarikhInput = document.getElementById("tarikhLahir");
 
-const fp = flatpickr(tarikhInput, {
-    dateFormat: "d/m/Y",
-    allowInput: true,
-    clickOpens: true,
-    maxDate: "today",
-    disableMobile: true,
+let fp = null;
 
-    onChange: function(selectedDates) {
-        kiraUmur(selectedDates[0]);
-    }
-});
+if (tarikhInput) {
+
+    fp = flatpickr(tarikhInput,{
+        dateFormat:"d/m/Y",
+        allowInput:true,
+        clickOpens:true,
+        maxDate:"today",
+        disableMobile:true,
+
+        onChange:function(selectedDates){
+            kiraUmur(selectedDates[0]);
+        }
+
+    });
+
+}
 
 const calendarIcon = document.querySelector(".input-icon i");
 
@@ -1367,32 +1374,22 @@ function kiraUmur(birth) {
     document.getElementById("umur").value = age + " Tahun";
 }
 
-tarikhInput.addEventListener("input", function () {
+if (tarikhInput) {
 
-    let value = this.value.replace(/\D/g, "");
+    fp = flatpickr(tarikhInput,{
+        dateFormat:"d/m/Y",
+        allowInput:true,
+        clickOpens:true,
+        maxDate:"today",
+        disableMobile:true,
 
-    if (value.length > 2) {
-        value = value.substring(0, 2) + "/" + value.substring(2);
-    }
-
-    if (value.length > 5) {
-        value = value.substring(0, 5) + "/" + value.substring(5, 9);
-    }
-
-    this.value = value;
-
-    if (value.length === 10) {
-
-        const parts = value.split("/");
-
-        const birth = new Date(parts[2], parts[1] - 1, parts[0]);
-
-        if (!isNaN(birth)) {
-            kiraUmur(birth);
+        onChange:function(selectedDates){
+            kiraUmur(selectedDates[0]);
         }
-    }
 
-});
+    });
+
+}
 
 
 
