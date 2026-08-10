@@ -1383,6 +1383,3 @@ function kiraUmur(birth) {
 }
 
 
-
-
-
