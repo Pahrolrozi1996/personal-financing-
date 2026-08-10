@@ -1,55 +1,5 @@
 console.log("Personal Financing Premium Loaded");
 /* =====================================================
-   AUTO WHATSAPP (OLD VERSION)
-=====================================================
-
-if(form){
-
-    form.addEventListener("submit",function(e){
-
-        e.preventDefault();
-
-        const nama = document.getElementById("nama").value;
-
-        const tarikhLahir = document.getElementById("tarikhLahir").value;
-
-        const sektor = document.getElementById("sektor").value;
-
-        const today = new Date();
-const birth = new Date(tarikhLahir);
-
-let umur = today.getFullYear() - birth.getFullYear();
-
-const m = today.getMonth() - birth.getMonth();
-
-if (m < 0 || (m === 0 && today.getDate() < birth.getDate())) {
-    umur--;
-}
-
-        const text =
-`Assalamualaikum.
-
-Saya ingin membuat semakan awal kelayakan pembiayaan.
-
-Nama : ${nama}
-Umur : ${umur}
-Sektor : ${sektor}`;
-
-        window.open(
-
-`https://wa.me/${CONFIG.phone}?text=${encodeURIComponent(text)}`,
-
-"_blank"
-
-);
-
-    });
-
-}
-
-*/
-
-/* =====================================================
    SMART FORM
 ===================================================== */
 
