@@ -485,22 +485,21 @@ function sendToWhatsApp() {
 
     const sektor = document.getElementById("sektor")?.value || "";
 
-    const profession = document.getElementById("profession")?.value || "-";
+   const profession = document.getElementById("profession")?.value || "";
 
-    const company = document.getElementById("company")?.value || "-";
+const category = document.getElementById("category")?.value || "";
 
-    const category = document.getElementById("category")?.value || "-";
+const industry = document.getElementById("industry")?.value || "";
 
-    const industry = document.getElementById("industry")?.value || "-";
+const company = document.getElementById("company")?.value || "";
 
-    const position = document.getElementById("position")?.value || "-";
+const position = document.getElementById("position")?.value || "";
 
-    const status = document.getElementById("status")?.value || "-";
+const status = document.getElementById("status")?.value || "";
 
-    const service = document.getElementById("service")?.value || "-";
+const service = document.getElementById("service")?.value || "";
 
-    const operation = document.getElementById("operation")?.value || "-";
-
+const operation = document.getElementById("operation")?.value || "";
     const basic = document.getElementById("basic")?.value || "0";
 
     const allowance = document.getElementById("allowance")?.value || "0";
@@ -521,30 +520,30 @@ if (profession) {
     text += `*Profesion:* ${profession}\n`;
 }
 
-if (category) {
-    text += `*Kategori Majikan:* ${category}\n`;
+if (company) {
+    text += `*Majikan:* ${company}\n`;
 }
 
-if (industry) {
-    text += `*Bidang Syarikat:* ${industry}\n`;
+if (position) {
+    text += `*Jawatan:* ${position}\n`;
 }
 
-text += `*Majikan:* ${company}
-*Jawatan:* ${position}
-`;
-
-if (status && status !== "-") {
+if (status) {
     text += `*Status Jawatan:* ${status}\n`;
 }
 
-if (service && service !== "-") {
-    text += `*Tempoh Perkhidmatan:* ${document.getElementById("service").options[document.getElementById("service").selectedIndex].text}\n`;
+if (service) {
+    text += `*Tempoh Perkhidmatan:* ${
+        document.getElementById("service").options[
+            document.getElementById("service").selectedIndex
+        ].text
+    }\n`;
 }
 
-if (operation && operation !== "-") {
+if (operation) {
     text += `*Tempoh Operasi:* ${operation}\n`;
 }
-
+   
 text += `*Gaji Pokok:* RM ${Number(basic).toLocaleString("en-MY")}\n`;
 
 if (allowance && Number(allowance) > 0) {
