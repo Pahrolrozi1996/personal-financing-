@@ -1331,21 +1331,22 @@ const fp = flatpickr(tarikhInput, {
     maxDate: "today",
     disableMobile: true,
 
-    onChange: function (selectedDates) {
+    onChange: function(selectedDates) {
         kiraUmur(selectedDates[0]);
     }
 });
 
-document.querySelector(".input-icon i")
-.addEventListener("click", function(){
+const calendarIcon = document.querySelector(".input-icon i");
 
-    fp.open();
+if (calendarIcon) {
+    calendarIcon.addEventListener("click", function () {
+        fp.open();
+    });
+}
 
-});
+function kiraUmur(birth) {
 
-function kiraUmur(birth){
-
-    if(!birth){
+    if (!birth) {
         document.getElementById("umur").value = "";
         return;
     }
@@ -1356,45 +1357,73 @@ function kiraUmur(birth){
 
     const monthDiff = today.getMonth() - birth.getMonth();
 
-    if(
+    if (
         monthDiff < 0 ||
         (monthDiff === 0 && today.getDate() < birth.getDate())
-    ){
+    ) {
         age--;
     }
 
     document.getElementById("umur").value = age + " Tahun";
 }
+
 tarikhInput.addEventListener("input", function () {
 
-    let value = this.value.replace(/\D/g,"");
+    let value = this.value.replace(/\D/g, "");
 
-    if(value.length > 2){
-        value = value.substring(0,2) + "/" + value.substring(2);
+    if (value.length > 2) {
+        value = value.substring(0, 2) + "/" + value.substring(2);
     }
 
-    if(value.length > 5){
-        value = value.substring(0,5) + "/" + value.substring(5,9);
+    if (value.length > 5) {
+        value = value.substring(0, 5) + "/" + value.substring(5, 9);
     }
 
     this.value = value;
 
-    if(value.length === 10){
+    if (value.length === 10) {
 
         const parts = value.split("/");
 
-        const birth = new Date(
-            parts[2],
-            parts[1]-1,
-            parts[0]
-        );
+        const birth = new Date(parts[2], parts[1] - 1, parts[0]);
 
-        if(!isNaN(birth)){
+        if (!isNaN(birth)) {
             kiraUmur(birth);
         }
-
     }
 
+});
+
+
+onClose: function(selectedDates, dateStr) {
+
+    if (!dateStr) {
+        document.getElementById("umur").value = "";
+        return;
+    }
+
+    // Jika pengguna taip sendiri, kira umur semula
+    const parts = dateStr.split("/");
+
+    if (parts.length !== 3) return;
+
+    const birth = new Date(parts[2], parts[1] - 1, parts[0]);
+    const today = new Date();
+
+    let age = today.getFullYear() - birth.getFullYear();
+
+    const monthDiff = today.getMonth() - birth.getMonth();
+
+    if (
+        monthDiff < 0 ||
+        (monthDiff === 0 && today.getDate() < birth.getDate())
+    ) {
+        age--;
+    }
+
+    document.getElementById("umur").value = age + " Tahun";
+
+}
 });
 
 
