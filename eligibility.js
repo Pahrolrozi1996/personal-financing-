@@ -513,7 +513,7 @@ Saya ingin membuat semakan lanjut Pembiayaan Peribadi-i.
 
 *Nama* : ${nama}
 *Tarikh Lahir* ${tarikhLahir}
-*Umur* ${umur} Tahun
+*Umur* ${umur}
 *Sektor* : ${sektor}
 *Profesion* : ${profession}
 *Kategori Majikan* : ${category}
