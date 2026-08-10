@@ -1321,3 +1321,29 @@ flatpickr("#tarikhLahir", {
     disableMobile: true,
     allowInput: false
 });
+
+const tarikhInput = document.getElementById("tarikhLahir");
+
+if (tarikhInput) {
+
+    tarikhInput.addEventListener("change", function () {
+
+        const birth = new Date(this.value);
+        const today = new Date();
+
+        let age = today.getFullYear() - birth.getFullYear();
+
+        const m = today.getMonth() - birth.getMonth();
+
+        if (
+            m < 0 ||
+            (m === 0 && today.getDate() < birth.getDate())
+        ) {
+            age--;
+        }
+
+        document.getElementById("umur").value = age + " Tahun";
+
+    });
+
+}
