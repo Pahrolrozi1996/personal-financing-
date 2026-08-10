@@ -707,12 +707,14 @@ linear-gradient(
 =========================== */
 
 .input-icon{
-    position:relative;
+    position: relative;
     width:100%;
 }
 
 .input-icon input{
     width:100%;
+    max-width:100%;
+    box-sizing:border-box;
     height:60px;
     padding:0 50px 0 18px;
 }
@@ -723,6 +725,7 @@ linear-gradient(
     top:50%;
     transform:translateY(-50%);
     color:#7A0019;
+    z-index:2;
 }
 
 .form-group input:focus,
