@@ -1322,33 +1322,79 @@ floatingWA.style.transform="translateY(30px)";
 
 }
 
-flatpickr("#tarikhLahir", {
+const tarikhInput = document.getElementById("tarikhLahir");
+
+const fp = flatpickr(tarikhInput, {
     dateFormat: "d/m/Y",
     allowInput: true,
     clickOpens: true,
     maxDate: "today",
-    disableMobile: false,
+    disableMobile: true,
 
-    onChange: function(selectedDates) {
+    onChange: function (selectedDates) {
+        kiraUmur(selectedDates[0]);
+    }
+});
 
-        if (!selectedDates.length) return;
+document.querySelector(".input-icon i")
+.addEventListener("click", function(){
 
-        const birth = selectedDates[0];
-        const today = new Date();
+    fp.open();
 
-        let age = today.getFullYear() - birth.getFullYear();
+});
 
-        const monthDiff = today.getMonth() - birth.getMonth();
+function kiraUmur(birth){
 
-        if (
-            monthDiff < 0 ||
-            (monthDiff === 0 && today.getDate() < birth.getDate())
-        ) {
-            age--;
+    if(!birth){
+        document.getElementById("umur").value = "";
+        return;
+    }
+
+    const today = new Date();
+
+    let age = today.getFullYear() - birth.getFullYear();
+
+    const monthDiff = today.getMonth() - birth.getMonth();
+
+    if(
+        monthDiff < 0 ||
+        (monthDiff === 0 && today.getDate() < birth.getDate())
+    ){
+        age--;
+    }
+
+    document.getElementById("umur").value = age + " Tahun";
+}
+tarikhInput.addEventListener("input", function () {
+
+    let value = this.value.replace(/\D/g,"");
+
+    if(value.length > 2){
+        value = value.substring(0,2) + "/" + value.substring(2);
+    }
+
+    if(value.length > 5){
+        value = value.substring(0,5) + "/" + value.substring(5,9);
+    }
+
+    this.value = value;
+
+    if(value.length === 10){
+
+        const parts = value.split("/");
+
+        const birth = new Date(
+            parts[2],
+            parts[1]-1,
+            parts[0]
+        );
+
+        if(!isNaN(birth)){
+            kiraUmur(birth);
         }
 
-        document.getElementById("umur").value = age + " Tahun";
     }
+
 });
 
 
