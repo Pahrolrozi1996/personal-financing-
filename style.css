@@ -2413,3 +2413,15 @@ display:none;
 .icon-location{
     color:#a50021;
 }
+
+/* PageSpeed - stabilkan icon Font Awesome */
+.hero-highlight i,
+.form-info i,
+.faq-question i,
+.contact-list i,
+.wa-icon i {
+    width: 1.25em;
+    min-width: 1.25em;
+    display: inline-block;
+    text-align: center;
+}
