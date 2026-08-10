@@ -590,6 +590,11 @@ Saya telah membuat semakan awal melalui laman web dan ingin mendapatkan semakan 
 Terima kasih.
 `;
 
+   gtag('event', 'submit_form', {
+    event_category: 'Form',
+    event_label: 'Eligibility Form'
+});
+
     window.open(
 
         `https://wa.me/${CONFIG.phone}?text=${encodeURIComponent(text)}`,
