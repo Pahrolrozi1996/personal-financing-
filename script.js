@@ -530,15 +530,22 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const checkButton = document.getElementById("checkEligibility");
 
-    if (checkButton) {
+if (checkButton) {
 
-        checkButton.addEventListener("click", () => {
+    checkButton.addEventListener("click", () => {
 
-            validate();
+        const form = document.getElementById("eligibilityForm");
 
-        });
+        if (!form.checkValidity()) {
+            form.reportValidity();
+            return;
+        }
 
-    }
+        validate();
+
+    });
+
+}
 
 });
 
