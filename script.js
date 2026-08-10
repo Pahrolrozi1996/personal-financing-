@@ -867,7 +867,7 @@ Lihat Syarat
 
 <a href="asset/pdf/gov-2.88.pdf"
 target="_blank"
-class="download-rate">
+class="download-rate"
 onclick="gtag('event','download_rate',{
     event_category:'PDF',
     event_label:'Government 2.88'
@@ -878,11 +878,14 @@ onclick="gtag('event','download_rate',{
 
 </a>
 
-    <a href="#semakan" class="apply-btn">
-
-        Semak Kelayakan
-
-    </a>
+<a href="#semakan"
+class="apply-btn"
+onclick="gtag('event','check_eligibility_click',{
+    event_category:'Button',
+    event_label:'Pricing Card'
+});">
+    Semak Kelayakan
+</a>
 
 </div>
 
@@ -907,10 +910,10 @@ Lihat Syarat
 
 <a href="asset/pdf/package-2.93.pdf"
 target="_blank"
-class="download-rate">
+class="download-rate"
 onclick="gtag('event','download_rate',{
     event_category:'PDF',
-    event_label:'Government 2.88'
+    event_label:'pakage-2.93'
 });">
 
 
@@ -921,11 +924,14 @@ onclick="gtag('event','download_rate',{
 
 </a>
 
-    <a href="#semakan" class="apply-btn">
-
-        Semak Kelayakan
-
-    </a>
+    <a href="#semakan"
+class="apply-btn"
+onclick="gtag('event','check_eligibility_click',{
+    event_category:'Button',
+    event_label:'Pricing Card'
+});">
+    Semak Kelayakan
+</a>
 
 </div>
 
@@ -953,7 +959,11 @@ Lihat Syarat
 
 <a href="asset/pdf/professional-3.32.pdf"
 target="_blank"
-class="download-rate">
+class="download-rate"
+onclick="gtag('event','download_rate',{
+    event_category:'PDF',
+    event_label:'professional-3.32'
+});">
 
     <i class="fa-solid fa-file-pdf"></i>
 
@@ -961,10 +971,13 @@ class="download-rate">
 
 </a>
 
-<a href="#semakan" class="apply-btn">
-
-Semak Kelayakan
-
+<a href="#semakan"
+class="apply-btn"
+onclick="gtag('event','check_eligibility_click',{
+    event_category:'Button',
+    event_label:'Pricing Card'
+});">
+    Semak Kelayakan
 </a>
 
 </div>
@@ -989,7 +1002,11 @@ Lihat Syarat
 
 <a href="asset/pdf/professional-3.62.pdf"
 target="_blank"
-class="download-rate">
+class="download-rate"
+onclick="gtag('event','download_rate',{
+    event_category:'PDF',
+    event_label:'professional-3.62'
+});">
 
     <i class="fa-solid fa-file-pdf"></i>
 
@@ -997,10 +1014,13 @@ class="download-rate">
 
 </a>
 
-<a href="#semakan" class="apply-btn">
-
+<a href="#semakan"
+class="apply-btn"
+onclick="gtag('event','check_eligibility_click',{
+    event_category:'Button',
+    event_label:'Pricing Card'
+});">
     Semak Kelayakan
-
 </a>
 
 </div>
@@ -1026,7 +1046,11 @@ Lihat Syarat
 
 <a href="asset/pdf/professional-5.85.pdf"
 target="_blank"
-class="download-rate">
+class="download-rate"
+onclick="gtag('event','download_rate',{
+    event_category:'PDF',
+    event_label:'professional-5.85'
+});">
 
     <i class="fa-solid fa-file-pdf"></i>
 
@@ -1034,10 +1058,13 @@ class="download-rate">
 
 </a>
 
-<a href="#semakan" class="apply-btn">
-
-Semak Kelayakan
-
+<a href="#semakan"
+class="apply-btn"
+onclick="gtag('event','check_eligibility_click',{
+    event_category:'Button',
+    event_label:'Pricing Card'
+});">
+    Semak Kelayakan
 </a>
 
 </div>
@@ -1067,7 +1094,11 @@ Lihat Syarat
 
 <a href="asset/pdf/swasta-7.21.pdf"
 target="_blank"
-class="download-rate">
+class="download-rate"
+onclick="gtag('event','download_rate',{
+    event_category:'PDF',
+    event_label:'swasta-7.21'
+});">
 
 <i class="fa-solid fa-file-pdf"></i>
 
@@ -1075,10 +1106,13 @@ Jadual Kadar Pembiayaan
 
 </a>
 
-<a href="#semakan" class="apply-btn">
-
-Semak Kelayakan
-
+<a href="#semakan"
+class="apply-btn"
+onclick="gtag('event','check_eligibility_click',{
+    event_category:'Button',
+    event_label:'Pricing Card'
+});">
+    Semak Kelayakan
 </a>
 
 </div>
@@ -1105,7 +1139,11 @@ Lihat Syarat
 
 <a href="asset/pdf/swasta-8.99.pdf"
 target="_blank"
-class="download-rate">
+class="download-rate"
+onclick="gtag('event','download_rate',{
+    event_category:'PDF',
+    event_label:'swasta-8.99'
+});">
 
 <i class="fa-solid fa-file-pdf"></i>
 
@@ -1113,10 +1151,13 @@ Jadual Kadar Pembiayaan
 
 </a>
 
-<a href="#semakan" class="apply-btn">
-
-Semak Kelayakan
-
+<a href="#semakan"
+class="apply-btn"
+onclick="gtag('event','check_eligibility_click',{
+    event_category:'Button',
+    event_label:'Pricing Card'
+});">
+    Semak Kelayakan
 </a>
 
 </div>
@@ -1143,7 +1184,11 @@ Lihat Syarat
 
 <a href="asset/pdf/swasta-11.62.pdf"
 target="_blank"
-class="download-rate">
+class="download-rate"
+onclick="gtag('event','download_rate',{
+    event_category:'PDF',
+    event_label:'swasta-11.62'
+});">
 
 <i class="fa-solid fa-file-pdf"></i>
 
@@ -1151,10 +1196,13 @@ Jadual Kadar Pembiayaan
 
 </a>
 
-<a href="#semakan" class="apply-btn">
-
-Semak Kelayakan
-
+<a href="#semakan"
+class="apply-btn"
+onclick="gtag('event','check_eligibility_click',{
+    event_category:'Button',
+    event_label:'Pricing Card'
+});">
+    Semak Kelayakan
 </a>
 
 </div>
@@ -1384,22 +1432,7 @@ function kiraUmur(birth) {
     document.getElementById("umur").value = age + " Tahun";
 }
 
-if (tarikhInput) {
 
-    fp = flatpickr(tarikhInput,{
-        dateFormat:"d/m/Y",
-        allowInput:true,
-        clickOpens:true,
-        maxDate:"today",
-        disableMobile:true,
-
-        onChange:function(selectedDates){
-            kiraUmur(selectedDates[0]);
-        }
-
-    });
-
-}
 
 
 
