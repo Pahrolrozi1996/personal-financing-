@@ -707,23 +707,23 @@ linear-gradient(
 =========================== */
 
 .input-icon{
-    position:relative;
+    position: relative;
 }
 
 .input-icon input{
     width:100%;
-    padding-right:45px;
+    height:60px;
+    padding:0 50px 0 18px;
 }
 
 .input-icon i{
     position:absolute;
-    right:15px;
     top:50%;
+    right:18px;
     transform:translateY(-50%);
-    color:#999;
-    pointer-events:none;
+    color:#7A0019;
+    cursor:pointer;
 }
-
 
 .form-group input:focus,
 .form-group select:focus{
