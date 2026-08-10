@@ -2391,3 +2391,25 @@ display:none;
 }
 
 }
+
+.icon-check,
+.icon-phone,
+.icon-email,
+.icon-location{
+    display:inline-block;
+    width:22px;
+    margin-right:8px;
+    color:#a50021;
+    font-weight:700;
+    text-align:center;
+}
+
+.icon-check{
+    color:#16a34a;
+}
+
+.icon-phone,
+.icon-email,
+.icon-location{
+    color:#a50021;
+}
