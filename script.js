@@ -1319,31 +1319,30 @@ flatpickr("#tarikhLahir", {
     dateFormat: "d/m/Y",
     maxDate: "today",
     disableMobile: true,
-    allowInput: false
-});
+    allowInput: false,
 
-const tarikhInput = document.getElementById("tarikhLahir");
+    onChange: function(selectedDates) {
 
-if (tarikhInput) {
+        if (!selectedDates.length) return;
 
-    tarikhInput.addEventListener("change", function () {
-
-        const birth = new Date(this.value);
+        const birth = selectedDates[0];
         const today = new Date();
 
         let age = today.getFullYear() - birth.getFullYear();
 
-        const m = today.getMonth() - birth.getMonth();
-
         if (
-            m < 0 ||
-            (m === 0 && today.getDate() < birth.getDate())
+            today.getMonth() < birth.getMonth() ||
+            (
+                today.getMonth() === birth.getMonth() &&
+                today.getDate() < birth.getDate()
+            )
         ) {
             age--;
         }
 
         document.getElementById("umur").value = age + " Tahun";
 
-    });
+    }
 
-}
+});
+
