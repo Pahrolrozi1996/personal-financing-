@@ -520,6 +520,22 @@ if (profession) {
     text += `*Profesion:* ${profession}\n`;
 }
 
+   if (category) {
+    text += `*Kategori Majikan:* ${
+        document.getElementById("category").options[
+            document.getElementById("category").selectedIndex
+        ].text
+    }\n`;
+}
+
+if (industry) {
+    text += `*Bidang Syarikat:* ${
+        document.getElementById("industry").options[
+            document.getElementById("industry").selectedIndex
+        ].text
+    }\n`;
+}
+
 if (company) {
     text += `*Majikan:* ${company}\n`;
 }
@@ -528,9 +544,11 @@ if (position) {
     text += `*Jawatan:* ${position}\n`;
 }
 
-if (status) {
-    text += `*Status Jawatan:* ${status}\n`;
-}
+text += `*Status Jawatan:* ${
+    document.getElementById("status").options[
+        document.getElementById("status").selectedIndex
+    ].text
+}\n`;
 
 if (service) {
     text += `*Tempoh Perkhidmatan:* ${
@@ -540,9 +558,11 @@ if (service) {
     }\n`;
 }
 
-if (operation) {
-    text += `*Tempoh Operasi:* ${operation}\n`;
-}
+text += `*Tempoh Operasi:* ${
+    document.getElementById("operation").options[
+        document.getElementById("operation").selectedIndex
+    ].text
+}\n`;
    
 text += `*Gaji Pokok:* RM ${Number(basic).toLocaleString("en-MY")}\n`;
 
