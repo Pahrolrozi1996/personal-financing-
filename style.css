@@ -89,13 +89,10 @@ header{
 
 .navbar{
     height:95px;
-
     display:flex;
-
     justify-content:center;
-
     align-items:center;
-
+    gap:40px;
 }
 
 nav ul{
