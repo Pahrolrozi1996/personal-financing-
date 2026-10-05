@@ -846,45 +846,45 @@ onclick="gtag('event','check_eligibility_click',{
     <div class="rate">3.08% <span>p.a.</span></div>
 
     <div class="rate-tenure">
-    ⭐ Tempoh Pembiayaan • 10 Tahun
-</div>
-<a href="#"
-class="view-rule"
-data-category="glc"
+        ⭐ Tempoh Pembiayaan • 10 Tahun
+    </div>
 
-    <i class="fa-solid fa-circle-exclamation"></i>
+    <a href="#"
+    class="view-rule"
+    data-category="glc">
 
-Lihat Syarat
+        <i class="fa-solid fa-circle-exclamation"></i>
 
-</a>
+        Lihat Syarat
 
-<a href="asset/pdf/package-3.08.pdf"
-target="_blank"
-class="download-rate"
-onclick="gtag('event','download_rate',{
-    event_category:'PDF',
-    event_label:'package-3.08'
-});">
+    </a>
 
+    <a href="asset/pdf/package-3.08.pdf"
+    target="_blank"
+    class="download-rate"
+    onclick="gtag('event','download_rate',{
+        event_category:'PDF',
+        event_label:'package-3.08'
+    });">
 
+        <i class="fa-solid fa-file-pdf"></i>
 
-    <i class="fa-solid fa-file-pdf"></i>
+        Jadual Kadar Pembiayaan
 
-    Jadual Kadar Pembiayaan
-
-</a>
+    </a>
 
     <a href="#semakan"
-class="apply-btn"
-onclick="gtag('event','check_eligibility_click',{
-    event_category:'Button',
-    event_label:'Pricing Card'
-});">
-    Semak Kelayakan
-</a>
+    class="apply-btn"
+    onclick="gtag('event','check_eligibility_click',{
+        event_category:'Button',
+        event_label:'Pricing Card'
+    });">
+
+        Semak Kelayakan
+
+    </a>
 
 </div>
-
 `,
 
 professional: `
