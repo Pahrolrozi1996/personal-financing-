@@ -863,7 +863,7 @@ target="_blank"
 class="download-rate"
 onclick="gtag('event','download_rate',{
     event_category:'PDF',
-    event_label:'pakage-3.08'
+    event_label:'package-3.08'
 });">
 
 
