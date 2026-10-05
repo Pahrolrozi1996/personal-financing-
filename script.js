@@ -843,7 +843,7 @@ onclick="gtag('event','check_eligibility_click',{
 
     <h3>🏢 Package Company</h3>
 
-    <div class="rate">2.93% <span>p.a.</span></div>
+    <div class="rate">3.08% <span>p.a.</span></div>
 
     <div class="rate-tenure">
     ⭐ Tempoh Pembiayaan • 10 Tahun
@@ -858,12 +858,12 @@ Lihat Syarat
 
 </a>
 
-<a href="asset/pdf/package-2.93.pdf"
+<a href="asset/pdf/package-3.08.pdf"
 target="_blank"
 class="download-rate"
 onclick="gtag('event','download_rate',{
     event_category:'PDF',
-    event_label:'pakage-2.93'
+    event_label:'pakage-3.08'
 });">
 
 
